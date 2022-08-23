@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <script lang="JavaScript">
+            var l1, l2, l3, h, c1, c2, p, ph;
+            l1 = parseFloat(window.prompt("Digite o primeiro lado do triâgulo: "));
+            l2 = parseFloat(window.prompt("Digite o segundo lado do triângulo: "));
+            l3 = parseFloat(window.prompt("Digite o terceiro lado do triângulo para verificar se ele é retângulo: "));
+
+            if (l1 > l2 && l1 > l3)
+            {
+                h = l1;
+                c1 = l2;
+                c2 = l3;
+            }
+            if (l2 > l1 && l2 > l3)
+            {
+                h = l2;
+                c1 = l1;
+                c2 = l3;
+            }
+            if (l3 > l2 && l3 > l1)
+            {
+                h = l3;
+                c1 = l2;
+                c2 = l1;
+            }
+            
+            p = c1**2 + c2**2
+            ph = h**2
+           
+            if (ph == p)
+            {
+                document.write("Ele é um triângulo retângulo")
+            }else
+            {
+                document.write("Ele não é um triângulo retângulo")
+            }
+
+        </script>
+    </body>
+</html>

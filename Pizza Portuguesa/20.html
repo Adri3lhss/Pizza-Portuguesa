@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="JavaScript">
+    var n, a = 0, b = 1, c;
+do
+{
+    n = parseInt(window.prompt("Digite a quantidade de termos Fibonacci que você deseja ver: "));
+}
+while (n < 2);
+c = n;
+document.write("Tabela Fibonacci: ");
+document.write("1");
+for (a = 0; c > 1; c--)
+{
+    n = a;
+    a = b;
+    b = a + n;
+    document.write(b);
+
+}
+</script>
+</body>
+</html>
